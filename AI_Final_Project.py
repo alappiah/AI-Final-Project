@@ -13,11 +13,10 @@ drive.mount('/content/drive')
 import pandas as pd
 import requests
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler, OrdinalEncoder, StandardScaler
+from sklearn.preprocessing import StandardScaler, OrdinalEncoder
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.feature_selection import mutual_info_regression
 import numpy as np
 import xgboost as xgb
 from sklearn.model_selection import cross_val_score, KFold
@@ -46,17 +45,6 @@ fixtures_df.columns
 player_team_fixture = pd.concat([players_df, teams_df,fixtures_df], axis=1)
 #Removes duplicated comments
 player_team_fixture = player_team_fixture.loc[:,~player_team_fixture.columns.duplicated()].copy()
-
-# player_team_df = pd.merge(players_df, teams_df, left_on='team', right_on='id', suffixes=('', '_team'))
-
-# # Merge player-team data with fixture data for home games
-# player_team_fixture_home = pd.merge(player_team_df, fixtures_df, left_on='team', right_on='team_h', suffixes=('', '_home'))
-
-# # Merge player-team data with fixture data for away games
-# player_team_fixture_away = pd.merge(player_team_df, fixtures_df, left_on='team', right_on='team_a', suffixes=('', '_away'))
-
-# # Concatenate home and away data
-# player_team_fixture = pd.concat([player_team_fixture_home, player_team_fixture_away], ignore_index=True)
 
 team_id_to_name = teams_df.set_index('id')['name'].to_dict()
 player_team_fixture['Home_team_name'] = player_team_fixture['team_h'].map(team_id_to_name)

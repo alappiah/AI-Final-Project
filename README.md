@@ -1,5 +1,5 @@
 # AI-Final-Project
-
+Link to the video: https://youtu.be/JzvcJ7E2RTc
 ---
 
 # Fantasy Premier League (FPL) Prediction App
@@ -10,7 +10,7 @@ This application provides features to predict Fantasy Premier League (FPL) point
 
 1. **Predict FPL Points**: Predict the points a player will score based on key features.
 2. **Search for a Player**: Search for a player by name and display their predicted points.
-3. **Display Team of the Week**: View the optimal team for the week, considering gameweek, minimum budget, and maximum budget.
+3. **Display Team of the Week**: View the optimal team for the week, considering game week, minimum budget, and maximum budget.
 
 ## Getting Started
 

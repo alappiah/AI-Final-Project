@@ -36,7 +36,7 @@ pip install -r requirements.txt
 Start the application by running:
 
 ```bash
-python localapp.py
+python app.py
 ```
 
 ### 4. Access the App
@@ -44,7 +44,7 @@ python localapp.py
 Open your terminal and run:
 
 ```bash
-streamlit run localapp.py
+streamlit run app.py
 ```
 
 This will start a local server. You can access the application in your web browser at `http://localhost:8501`.

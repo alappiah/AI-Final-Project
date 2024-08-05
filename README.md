@@ -59,4 +59,4 @@ This will start a local server. You can access the application in your web brows
 2. **Interact with Features**:
    - For **Predict Points**, input the required values and press **Predict Points** to view the prediction.
    - For **Display Team of the Week**, provide the gameweek and budget constraints, then press **Display Team of the Week** to see the recommended team.
-   - For **Search Players**, enter the player's name and press **Search** to view the player's predicted points.
+   - For **Search Players**, enter the player's name as it appears in the Fantasy Premier League app and press **Search** to view the player's predicted points.
